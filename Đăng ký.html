@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tham Gia CLB Yêu Sách</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white; 
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+        }
+        .btn-submit {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-submit:hover {
+            background: #218838;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Đăng Ký Tham Gia CLB Yêu Sách</h1>
+
+        <form action="#" method="post">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="nickname">Biệt danh vào CLB:</label>
+            <input type="text" id="nickname" name="nickname">
+
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="Nam" required>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+
+            <label for="favorite-book">Sách yêu thích:</label>
+            <textarea id="favorite-book" name="favorite-book" rows="3" placeholder="Hãy chia sẻ về sách bạn thích..."></textarea>
+
+            <label>Môn học yêu thích:</label>
+            <input type="checkbox" id="math" name="subject" value="Toán">
+            <label for="math">Toán</label>
+            <input type="checkbox" id="physics" name="subject" value="Vật lý">
+            <label for="physics">Vật lý</label>
+            <input type="checkbox" id="chemistry" name="subject" value="Hóa học">
+            <label for="chemistry">Hóa học</label>
+            <input type="checkbox" id="literature" name="subject" value="Ngữ văn">
+            <label for="literature">Ngữ văn</label>
+
+            <label for="experience">Kinh nghiệm đọc sách (nếu có):</label>
+            <textarea id="experience" name="experience" rows="3" placeholder="Chia sẻ về kinh nghiệm đọc sách của bạn..."></textarea>
+
+            <label for="reason">Lý do tham gia CLB:</label>
+            <textarea id="reason" name="reason" rows="3" placeholder="Vì sao bạn muốn tham gia CLB Yêu Sách?"></textarea>
+
+            <button type="submit" class="btn-submit">Đăng ký</button>
+        </form>
+
+        <div class="back-link">
+            <a href="yêu sách.html">← Quay lại trang chủ</a>
+        </div>
+    </div>
+
+</body>
+</html>
